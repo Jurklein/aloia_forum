@@ -4,8 +4,8 @@ begin
 --     PAGE: 00404
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2022.10.07'
-,p_release=>'22.2.4'
+ p_version_yyyy_mm_dd=>'2023.04.28'
+,p_release=>'23.1.0'
 ,p_default_workspace_id=>7870050665145974
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
@@ -39,7 +39,6 @@ wwv_flow_imp_page.create_page_plug(
 '</style>',
 '<img class="t15logo" src="#APP_FILES#icons/app-icon-512.png"></img>',
 '<h1 class="u-textCenter u-color-9-text">NOT FOUND</h1>'))
-,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_plug_read_only_when_type=>'ALWAYS'
 ,p_landmark_type=>'exclude_landmark'
 ,p_attribute_01=>'N'

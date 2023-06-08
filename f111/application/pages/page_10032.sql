@@ -4,8 +4,8 @@ begin
 --     PAGE: 10032
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2022.10.07'
-,p_release=>'22.2.4'
+ p_version_yyyy_mm_dd=>'2023.04.28'
+,p_release=>'23.1.0'
 ,p_default_workspace_id=>7870050665145974
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
@@ -268,6 +268,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_type=>'NATIVE_FORM_INIT'
 ,p_process_name=>'Initialize form Manage User Access'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>18661526712106303
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(18661955564106303)
@@ -281,6 +282,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_attribute_06=>'N'
 ,p_attribute_08=>'N'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>18661955564106303
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(18662350188106304)
@@ -289,6 +291,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_type=>'NATIVE_CLOSE_WINDOW'
 ,p_process_name=>'Close Dialog'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>18662350188106304
 );
 wwv_flow_imp.component_end;
 end;

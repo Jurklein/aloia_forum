@@ -4,8 +4,8 @@ begin
 --     PAGE: 00004
 --   Manifest End
 wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2022.10.07'
-,p_release=>'22.2.4'
+ p_version_yyyy_mm_dd=>'2023.04.28'
+,p_release=>'23.1.0'
 ,p_default_workspace_id=>7870050665145974
 ,p_default_application_id=>111
 ,p_default_id_offset=>0
@@ -34,7 +34,6 @@ wwv_flow_imp_page.create_page_plug(
 ,p_include_rowid_column=>false
 ,p_is_editable=>false
 ,p_plug_source_type=>'NATIVE_FORM'
-,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(18541849125106055)
@@ -43,7 +42,6 @@ wwv_flow_imp_page.create_page_plug(
 ,p_region_template_options=>'#DEFAULT#'
 ,p_plug_template=>wwv_flow_imp.id(18407219590105244)
 ,p_plug_display_sequence=>50
-,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'TEXT'
 ,p_attribute_03=>'Y'
@@ -180,6 +178,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_when=>'CREATE,SAVE,DELETE'
 ,p_process_when_type=>'REQUEST_IN_CONDITION'
 ,p_required_patch=>wwv_flow_imp.id(18320124400105159)
+,p_internal_uid=>18545641375106062
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(18880665267401915)
@@ -193,6 +192,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_attribute_06=>'Y'
 ,p_attribute_08=>'Y'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>18880665267401915
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(18544842622106062)
@@ -202,6 +202,7 @@ wwv_flow_imp_page.create_page_process(
 ,p_process_type=>'NATIVE_FORM_INIT'
 ,p_process_name=>'Initialize form Barcode'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>18544842622106062
 );
 wwv_flow_imp.component_end;
 end;

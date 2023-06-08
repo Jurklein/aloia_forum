@@ -1,1 +1,29 @@
-cHJvbXB0IC0tYXBwbGljYXRpb24vc2V0X2Vudmlyb25tZW50CnNldCBkZWZpbmUgb2ZmIHZlcmlmeSBvZmYgZmVlZGJhY2sgb2ZmCndoZW5ldmVyIHNxbGVycm9yIGV4aXQgc3FsLnNxbGNvZGUgcm9sbGJhY2sKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KLS0KLS0gT3JhY2xlIEFQRVggZXhwb3J0IGZpbGUKLS0KLS0gWW91IHNob3VsZCBydW4gdGhpcyBzY3JpcHQgdXNpbmcgYSBTUUwgY2xpZW50IGNvbm5lY3RlZCB0byB0aGUgZGF0YWJhc2UgYXMKLS0gdGhlIG93bmVyIChwYXJzaW5nIHNjaGVtYSkgb2YgdGhlIGFwcGxpY2F0aW9uIG9yIGFzIGEgZGF0YWJhc2UgdXNlciB3aXRoIHRoZQotLSBBUEVYX0FETUlOSVNUUkFUT1JfUk9MRSByb2xlLgotLQotLSBUaGlzIGV4cG9ydCBmaWxlIGhhcyBiZWVuIGF1dG9tYXRpY2FsbHkgZ2VuZXJhdGVkLiBNb2RpZnlpbmcgdGhpcyBmaWxlIGlzIG5vdAotLSBzdXBwb3J0ZWQgYnkgT3JhY2xlIGFuZCBjYW4gbGVhZCB0byB1bmV4cGVjdGVkIGFwcGxpY2F0aW9uIGFuZC9vciBpbnN0YW5jZQotLSBiZWhhdmlvciBub3cgb3IgaW4gdGhlIGZ1dHVyZS4KLS0KLS0gTk9URTogQ2FsbHMgdG8gYXBleF9hcHBsaWNhdGlvbl9pbnN0YWxsIG92ZXJyaWRlIHRoZSBkZWZhdWx0cyBiZWxvdy4KLS0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KYmVnaW4Kd3d2X2Zsb3dfaW1wLmltcG9ydF9iZWdpbiAoCiBwX3ZlcnNpb25feXl5eV9tbV9kZD0+JzIwMjMuMDQuMjgnCixwX3JlbGVhc2U9PicyMy4xLjAnCixwX2RlZmF1bHRfd29ya3NwYWNlX2lkPT43ODcwMDUwNjY1MTQ1OTc0CixwX2RlZmF1bHRfYXBwbGljYXRpb25faWQ9PjExMQoscF9kZWZhdWx0X2lkX29mZnNldD0+MAoscF9kZWZhdWx0X293bmVyPT4nSlVSS0xFSU4nCik7CmVuZDsKLwo=
+prompt --application/set_environment
+set define off verify off feedback off
+whenever sqlerror exit sql.sqlcode rollback
+--------------------------------------------------------------------------------
+--
+-- Oracle APEX export file
+--
+-- You should run this script using a SQL client connected to the database as
+-- the owner (parsing schema) of the application or as a database user with the
+-- APEX_ADMINISTRATOR_ROLE role.
+--
+-- This export file has been automatically generated. Modifying this file is not
+-- supported by Oracle and can lead to unexpected application and/or instance
+-- behavior now or in the future.
+--
+-- NOTE: Calls to apex_application_install override the defaults below.
+--
+--------------------------------------------------------------------------------
+begin
+wwv_flow_imp.import_begin (
+ p_version_yyyy_mm_dd=>'2023.04.28'
+,p_release=>'23.1.0'
+,p_default_workspace_id=>7870050665145974
+,p_default_application_id=>111
+,p_default_id_offset=>0
+,p_default_owner=>'JURKLEIN'
+);
+end;
+/
