@@ -1,14 +1,1 @@
-prompt --application/delete_application
-begin
-wwv_flow_imp.component_begin (
- p_version_yyyy_mm_dd=>'2022.10.07'
-,p_release=>'22.2.4'
-,p_default_workspace_id=>7870050665145974
-,p_default_application_id=>111
-,p_default_id_offset=>0
-,p_default_owner=>'JURKLEIN'
-);
-wwv_flow_imp.remove_flow(wwv_flow.g_flow_id);
-wwv_flow_imp.component_end;
-end;
-/
+cHJvbXB0IC0tYXBwbGljYXRpb24vZGVsZXRlX2FwcGxpY2F0aW9uCmJlZ2luCnd3dl9mbG93X2ltcC5jb21wb25lbnRfYmVnaW4gKAogcF92ZXJzaW9uX3l5eXlfbW1fZGQ9PicyMDIzLjA0LjI4JwoscF9yZWxlYXNlPT4nMjMuMS4wJwoscF9kZWZhdWx0X3dvcmtzcGFjZV9pZD0+Nzg3MDA1MDY2NTE0NTk3NAoscF9kZWZhdWx0X2FwcGxpY2F0aW9uX2lkPT4xMTEKLHBfZGVmYXVsdF9pZF9vZmZzZXQ9PjAKLHBfZGVmYXVsdF9vd25lcj0+J0pVUktMRUlOJwopOwp3d3ZfZmxvd19pbXAucmVtb3ZlX2Zsb3cod3d2X2Zsb3cuZ19mbG93X2lkKTsKd3d2X2Zsb3dfaW1wLmNvbXBvbmVudF9lbmQ7CmVuZDsKLwo=
