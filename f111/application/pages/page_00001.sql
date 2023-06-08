@@ -21,7 +21,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'13'
 ,p_last_updated_by=>'JURKLEIN'
-,p_last_upd_yyyymmddhh24miss=>'20230201114702'
+,p_last_upd_yyyymmddhh24miss=>'20230608210300'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(18534685706105461)
@@ -39,10 +39,9 @@ wwv_flow_imp_page.create_page_plug(
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(18557612885106099)
-,p_plug_name=>'Page Navigation'
+,p_plug_name=>'Navigation'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#:u-colors:t-Cards--featured t-Cards--block force-fa-lg:t-Cards--displayIcons:t-Cards--4cols:t-Cards--hideBody:t-Cards--animColorFill'
-,p_escape_on_http_output=>'Y'
 ,p_plug_template=>wwv_flow_imp.id(18357385730105218)
 ,p_plug_display_sequence=>30
 ,p_list_id=>wwv_flow_imp.id(18556575407106098)
