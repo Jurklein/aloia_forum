@@ -1,0 +1,77 @@
+prompt --application/shared_components/data_profiles/vddev_apps
+begin
+--   Manifest
+--     DATA PROFILE: VDDEV_APPS
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.4'
+,p_default_workspace_id=>8352453064037036
+,p_default_application_id=>102
+,p_default_id_offset=>9614839888637612
+,p_default_owner=>'WKSP_VDDEV'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'VDDEV_APPS'
+,p_format=>'JSON'
+,p_row_selector=>'items'
+,p_use_raw_json_selectors=>false
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(10255942597891026)
+,p_data_profile_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'OWNER'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'owner'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(10256276244891026)
+,p_data_profile_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'WORKSPACE'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'workspace'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(10256566596891026)
+,p_data_profile_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'APPLICATION_ID'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'application_id'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(10256835957891026)
+,p_data_profile_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'APPLICATION_NAME'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'application_name'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(10257119502891026)
+,p_data_profile_id=>wwv_flow_imp.id(10255731742891025)
+,p_name=>'WORKSPACE_DISPLAY_NAME'
+,p_sequence=>5
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'workspace_display_name'
+);
+wwv_flow_imp.component_end;
+end;
+/
